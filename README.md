@@ -2,13 +2,19 @@
 
 <img src="docs/qingjie-icon.png" width="96" alt="轻解图标">
 
+**[下载轻解 0.11.0（Windows x64 完整发布包）](https://github.com/boshili1234567-droid/-clear-/releases/download/v0.11.0/QingJie-0.11.0-windows-x64.zip)** · [打开发布页面](https://github.com/boshili1234567-droid/-clear-/releases/tag/v0.11.0)
+
 轻解是一款 Windows 压缩包工具，文件在本机处理。支持 ZIP、RAR / RAR5 浏览与解压、ZIP 密码加密，以及压缩包内文件管理。
 
 设计原则：简约、免费、快速、便捷，减少无关弹窗。
 
 ## 下载与运行
 
-下载 [轻解 0.11.0 完整发布包](https://github.com/boshili1234567-droid/-clear-/releases/download/v0.11.0/QingJie-0.11.0-windows-x64.zip)，解压后运行 `轻解.exe`。更新说明见 [v0.11.0 发布页面](https://github.com/boshili1234567-droid/-clear-/releases/tag/v0.11.0)。
+1. 打开 [v0.11.0 发布页面](https://github.com/boshili1234567-droid/-clear-/releases/tag/v0.11.0)，找到 **Assets（附件）**。
+2. 下载 **`QingJie-0.11.0-windows-x64.zip`**（约 1.9 MB）。
+3. 解压后打开 `轻解-0.11.0` 文件夹，双击 **`轻解.exe`**。
+
+> **下载入口说明：** `Code → Download ZIP`、`Source code (zip)` 和 `Source code (tar.gz)` 是 GitHub 自动生成的仓库文件包。本仓库目前存放说明和图标，所以这些包解压后只有 `README.md` 和 `docs`。可运行的软件在上方所指的 **Assets 附件**中。
 
 - 系统：Windows 10 / 11，x64。
 - 运行环境：.NET Framework 4.8 或 4.8.1。

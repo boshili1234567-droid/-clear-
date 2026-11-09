@@ -1,5 +1,11 @@
 轻解 v0.11.0 · Windows x64 体验版
 
+**[下载轻解完整发布包：QingJie-0.11.0-windows-x64.zip](https://github.com/boshili1234567-droid/-clear-/releases/download/v0.11.0/QingJie-0.11.0-windows-x64.zip)**
+
+请选择下方 **Assets（附件）** 中的同名 ZIP（约 1.9 MB），解压后打开 `轻解-0.11.0` 文件夹，运行 `轻解.exe`。
+
+GitHub 自动提供的 `Source code (zip)`、`Source code (tar.gz)` 以及 `Code → Download ZIP` 打包的是仓库说明和图标，解压后会看到 `README.md` 和 `docs`。轻解的可运行程序位于上面的完整发布包中。
+
 本版新增：
 
 - 压缩包详细列表：Windows 文件图标、类型、压缩前后大小与修改时间。
