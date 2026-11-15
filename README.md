@@ -2,7 +2,7 @@
 
 <img src="docs/qingjie-icon.png" width="96" alt="轻解图标">
 
-**[下载轻解 0.16.0（Windows x64 完整发布包）](https://github.com/boshili1234567-droid/-clear-/releases/download/v0.16.0/QingJie-0.16.0-windows-x64.zip)** · [打开发布页面](https://github.com/boshili1234567-droid/-clear-/releases/tag/v0.16.0)
+**[下载轻解 0.18.0（Windows x64 完整发布包）](https://github.com/boshili1234567-droid/-clear-/releases/download/v0.18.0/QingJie-0.18.0-windows-x64.zip)** · [打开发布页面](https://github.com/boshili1234567-droid/-clear-/releases/tag/v0.18.0)
 
 轻解是一款 Windows 压缩包工具，文件在本机处理。支持浏览和解压 ZIP、RAR / RAR5、TAR、TAR.GZ、TGZ 和普通 GZIP，也支持 ZIP 密码加密和压缩包内文件管理。
 
@@ -10,16 +10,16 @@
 
 ## 下载与运行
 
-1. 打开 [v0.16.0 发布页面](https://github.com/boshili1234567-droid/-clear-/releases/tag/v0.16.0)，找到 **Assets（附件）**。
-2. 下载 **`QingJie-0.16.0-windows-x64.zip`**（约 2 MB）。
-3. 解压后打开 `轻解-0.16.0` 文件夹，双击 **`轻解.exe`**。
+1. 打开 [v0.18.0 发布页面](https://github.com/boshili1234567-droid/-clear-/releases/tag/v0.18.0)，找到 **Assets（附件）**。
+2. 下载 **`QingJie-0.18.0-windows-x64.zip`**（约 2 MB）。
+3. 解压后打开 `轻解-0.18.0` 文件夹，双击 **`轻解.exe`**。
 
 > **下载入口说明：** `Code → Download ZIP`、`Source code (zip)` 和 `Source code (tar.gz)` 是 GitHub 自动生成的仓库文件包。本仓库目前存放说明和图标，所以这些包解压后只有 `README.md` 和 `docs`。可运行的软件在上方所指的 **Assets 附件**中。
 
 - 系统：Windows 10 / 11，x64。
 - 运行环境：.NET Framework 4.8 或 4.8.1。
 - ZIP、加密和 RAR 读取组件已内置，无需安装 WinRAR 或另行复制 DLL。
-- 当前版本：0.16.0 体验版。发布包附带使用说明、组件许可和自动化验证报告。
+- 当前版本：0.18.0 体验版。发布包附带使用说明、组件许可和自动化验证报告。
 
 ## 功能
 
@@ -52,7 +52,7 @@
 
 压缩包内删除操作会直接修改原包，不保留自动备份或恢复记录；删除前会显示确认提示。
 
-RAR 创建与修改目前限单文件 16 MiB、总计 64 MiB、最多 1,000 项；暂不支持创建加密、分卷或固实 RAR。加密或超过修改范围的 RAR 可浏览、解压，保持只读。不支持 7z、分卷压缩包或压缩包修复。
+轻解可创建和修改未加密的单卷 RAR。按文件原始大小计，单文件与每包合计的上限均为 20 GiB，每包最多 1,000 项。改包时会暂存保留的文件和重建结果，所需磁盘空间取决于数据大小。加密 RAR 可以在输入密码后浏览和解压。
 
 ## 许可与反馈
 
