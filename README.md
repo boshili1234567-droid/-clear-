@@ -2,34 +2,35 @@
 
 <img src="docs/qingjie-icon.png" width="96" alt="轻解图标">
 
-**[下载轻解 0.15.0（Windows x64 完整发布包）](https://github.com/boshili1234567-droid/-clear-/releases/download/v0.15.0/QingJie-0.15.0-windows-x64.zip)** · [打开发布页面](https://github.com/boshili1234567-droid/-clear-/releases/tag/v0.15.0)
+**[下载轻解 0.16.0（Windows x64 完整发布包）](https://github.com/boshili1234567-droid/-clear-/releases/download/v0.16.0/QingJie-0.16.0-windows-x64.zip)** · [打开发布页面](https://github.com/boshili1234567-droid/-clear-/releases/tag/v0.16.0)
 
-轻解是一款 Windows 压缩包工具，文件在本机处理。支持浏览和解压 ZIP、RAR / RAR5、TAR、TAR.GZ 和 TGZ，也支持 ZIP 密码加密和压缩包内文件管理。
+轻解是一款 Windows 压缩包工具，文件在本机处理。支持浏览和解压 ZIP、RAR / RAR5、TAR、TAR.GZ、TGZ 和普通 GZIP，也支持 ZIP 密码加密和压缩包内文件管理。
 
 设计原则：简约、免费、快速、便捷，减少无关弹窗。
 
 ## 下载与运行
 
-1. 打开 [v0.15.0 发布页面](https://github.com/boshili1234567-droid/-clear-/releases/tag/v0.15.0)，找到 **Assets（附件）**。
-2. 下载 **`QingJie-0.15.0-windows-x64.zip`**（约 2 MB）。
-3. 解压后打开 `轻解-0.15.0` 文件夹，双击 **`轻解.exe`**。
+1. 打开 [v0.16.0 发布页面](https://github.com/boshili1234567-droid/-clear-/releases/tag/v0.16.0)，找到 **Assets（附件）**。
+2. 下载 **`QingJie-0.16.0-windows-x64.zip`**（约 2 MB）。
+3. 解压后打开 `轻解-0.16.0` 文件夹，双击 **`轻解.exe`**。
 
 > **下载入口说明：** `Code → Download ZIP`、`Source code (zip)` 和 `Source code (tar.gz)` 是 GitHub 自动生成的仓库文件包。本仓库目前存放说明和图标，所以这些包解压后只有 `README.md` 和 `docs`。可运行的软件在上方所指的 **Assets 附件**中。
 
 - 系统：Windows 10 / 11，x64。
 - 运行环境：.NET Framework 4.8 或 4.8.1。
 - ZIP、加密和 RAR 读取组件已内置，无需安装 WinRAR 或另行复制 DLL。
-- 当前版本：0.15.0 体验版。发布包附带使用说明、组件许可和自动化验证报告。
+- 当前版本：0.16.0 体验版。发布包附带使用说明、组件许可和自动化验证报告。
 
 ## 功能
 
-- 创建 ZIP 和基础 RAR5 压缩包。可通过资源管理器右键一次带入多个文件和文件夹，默认合并打包。
+- 创建 ZIP、基础 RAR5、GZIP 和 TAR.GZ 压缩包。可通过资源管理器右键一次带入多个文件和文件夹，默认合并打包为一个 ZIP。
 - 解压 ZIP、RAR / RAR5，支持密码 ZIP 和单卷加密 RAR。
+- 浏览普通 `.gz`，例如 `数据.csv.gz`。可预览支持的文件类型，也可复制、拖出或批量解压。普通 GZIP 内容为只读。
 - 浏览、预览、复制、拖出和批量解压 TAR、TAR.GZ、TGZ，支持中文和长文件名。可在外层包内重命名文件和文件夹。
 - ZIP AES-256 密码加密。
-- 按文件夹层级浏览压缩包，显示项目图标、类型、大小和修改时间。ZIP 和 RAR 还显示压缩后大小。
+- 按文件夹层级浏览压缩包，显示项目图标、类型、大小和修改时间。ZIP、RAR 和 GZIP 还显示压缩后大小。
 - 预览常见文本、图片、PDF、Office 文字和单元格内容，以及常见音视频。可复制或拖出文件和文件夹。
-- 双击包内的 ZIP、RAR、TAR、TAR.GZ 或 TGZ，在只读窗口继续浏览其内容。
+- 双击包内的 ZIP、RAR、TAR、TAR.GZ、TGZ 或 GZIP，在只读窗口继续浏览其内容。
 - 将大文件拖到资源管理器的目标文件夹后松手，轻解随后解压并交给 Windows 复制。
 - ZIP 和符合条件的 RAR 可加入文件、重命名和删除。ZIP 还支持剪切到指定文件夹。
 - 批量解压跳过当前队列中已完成的任务，可手动重新解压所选任务。
@@ -39,7 +40,9 @@
 
 启用右键压缩时，在轻解里点击 **资源管理器集成 → 启用右键压缩**。选中项目后，右键点击 **使用轻解压缩…**，确认打包选项后点击 **开始打包**。Windows 11 的入口位于 **显示更多选项**。
 
-打开 `.tar.gz`、`.tgz` 或 `.tar` 时，在轻解里点击“浏览压缩包”。也可以把文件拖到主窗口，再选择“开始解压”。
+在 **创建压缩包 → 压缩格式** 中选 **GZIP（.gz）**，每个文件分别生成一个 `.gz`，例如 `数据.csv` 生成 `数据.csv.gz`。选 **TAR.GZ（.tar.gz）** 可以把多个文件和文件夹合在一个包里，保留目录结构和空文件夹，也可以分别打包。密码加密适用于 ZIP。
+
+打开普通 `.gz` 或 TAR 包时，在轻解里点击 **浏览压缩包**。也可以把文件拖到主窗口，再点击 **开始解压**。包内 CSV 等文本支持预览，单个文本的预览上限为 2 MiB，更大的文件可以解压或复制后查看。
 
 在外层 TAR 包中选中文件或文件夹后按 F2 改名。轻解会写入临时压缩包，校验后再保存。大包改名需要一定时间和同一磁盘上的临时空间。
 
